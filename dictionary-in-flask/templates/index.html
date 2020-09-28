@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1>Loop in flask</h1>
+<h1>Dictionary of names and roll no </h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Roll No.</th>
+    </tr>
+    {% for dic in list %}
+    {% for key,val in dic.items() %}
+    <tr>
+        <td>{{key}}</td>
+        <td>{{val}}</td>
+    </tr>
+    {%endfor%}
+    {%endfor%}
+</table>
+
+</body>
+</html>
+
